@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ryan Alessandro | Engenharia da Computação & TI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bgDark: '#0A0E17',
+            cardDark: '#111827',
+            borderDark: '#1E293B',
+            blueAccent: '#3B82F6',
+            blueGlow: '#60A5FA',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-bgDark text-gray-100 font-sans antialiased selection:bg-blueAccent selection:text-white">
+
+  <!-- NAVBAR -->
+  <nav class="sticky top-0 z-50 bg-bgDark/90 backdrop-blur-md border-b border-borderDark/60">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="text-xl font-bold tracking-tight text-white font-mono">
+        ryan<span class="text-blueAccent">.alessandro</span>
+      </a>
+      <div class="flex gap-6 text-sm text-gray-400 font-medium">
+        <a href="#sobre" class="hover:text-blueGlow transition-colors">Sobre</a>
+        <a href="#experiencia" class="hover:text-blueGlow transition-colors">Experiência</a>
+        <a href="#cursos" class="hover:text-blueGlow transition-colors">Formação</a>
+        <a href="#contato" class="hover:text-blueGlow transition-colors">Contato</a>
+        <a href="#curriculo" class="text-blue-400 hover:text-blue-300 font-mono transition-colors">CV.pdf ↗</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="max-w-6xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+    <!-- Informações da Esquerda -->
+    <div class="md:col-span-7 space-y-6">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-950/50 border border-blue-500/30 text-xs font-mono text-blue-400">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        Disponível para oportunidades
+      </div>
+      
+      <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight">
+        Ryan Alessandro Dantas da Silva
+      </h1>
+      
+      <p class="text-xl font-medium text-blue-400">
+        Engenharia da Computação & Suporte de Infraestrutura
+      </p>
+      
+      <p class="text-gray-400 leading-relaxed">
+        Atuo na gestão de infraestrutura de TI, monitoramento de redes, sistemas de telefonia PABX e criação de sites institucionais. Foco em otimização de processos e governança de acessos.
+      </p>
+      
+      <!-- Metadados -->
+      <div class="grid grid-cols-3 gap-4 pt-2 font-mono text-xs">
+        <div>
+          <span class="text-gray-500 block">local</span>
+          <span class="text-gray-200 font-semibold">Osasco, SP</span>
+        </div>
+        <div>
+          <span class="text-gray-500 block">curso</span>
+          <span class="text-gray-200 font-semibold">Eng. Computação</span>
+        </div>
+        <div>
+          <span class="text-gray-500 block">faculdade</span>
+          <span class="text-gray-200 font-semibold">Anhanguera</span>
+        </div>
+      </div>
+
+      <!-- Botões CTA -->
+      <div class="flex flex-wrap gap-4 pt-4">
+        <a href="#experiencia" class="px-6 py-3 bg-blueAccent hover:bg-blue-600 text-white font-medium rounded-lg shadow-lg shadow-blue-500/20 transition-all">
+          Ver experiências
+        </a>
+        <a href="#curriculo" class="px-6 py-3 border border-blueAccent/50 text-blue-400 hover:bg-blue-950/40 font-medium rounded-lg transition-all">
+          Baixar Currículo
+        </a>
+      </div>
+    </div>
+
+    <!-- Terminal Interativo na Direita -->
+    <div class="md:col-span-5">
+      <div class="bg-cardDark border border-borderDark rounded-xl p-5 shadow-2xl relative overflow-hidden group">
+        <div class="absolute -top-10 -right-10 w-40 h-40 bg-blueGlow/10 rounded-full blur-2xl pointer-events-none"></div>
+        
+        <div class="flex items-center gap-2 mb-4 border-b border-borderDark pb-3">
+          <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
+          <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+          <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
+          <span class="text-xs font-mono text-gray-500 ml-2">ryan@sysadmin:~</span>
+        </div>
+
+        <div class="font-mono text-xs space-y-2 text-gray-300">
+          <p><span class="text-blue-400">➜</span> <span class="text-emerald-400">~</span> systemctl status infra.service</p>
+          <p class="text-emerald-400">● Active: running (PABX, Networks, Workspace)</p>
+          <p><span class="text-blue-400">➜</span> <span class="text-emerald-400">~</span> cat skills.json</p>
+          <pre class="text-blue-300 bg-bgDark/70 p-3 rounded border border-borderDark/60 overflow-x-auto">
+{
+  "skills": ["Redes", "PABX", "Google Workspace", "Google Sites"],
+  "dev": ["Python", "SQL", "Excel", "HTML/CSS"],
+  "tools": ["JIRA", "Miro", "KPIs Operacionais"]
+}</pre>
+          <p><span class="text-blue-400">➜</span> <span class="text-emerald-400">~</span> <span class="animate-pulse">_</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE MIM COM FOTO PERFIL -->
+  <section id="sobre" class="max-w-6xl mx-auto px-6 py-20 border-t border-borderDark/50">
+    <h2 class="text-3xl font-extrabold text-white mb-10">Sobre mim</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
+      <!-- Foto de Perfil com Moldura de Gradiente -->
+      <div class="md:col-span-4 flex justify-center">
+        <div class="relative w-56 h-56 rounded-full p-1 bg-gradient-to-tr from-blue-600 via-blue-400 to-cyan-300 shadow-2xl shadow-blue-500/20">
+          <img src="foto.jpg" alt="Ryan Alessandro Dantas da Silva" class="w-full h-full object-cover rounded-full border-2 border-borderDark">
+        </div>
+      </div>
+
+      <!-- Texto Objetivo -->
+      <div class="md:col-span-8 space-y-4 text-gray-300 leading-relaxed">
+        <p class="text-lg text-white font-medium">
+          Profissional de TI focado em Suporte Técnico, Infraestrutura de Redes e Soluções Web.
+        </p>
+        <p>
+          Atuo com gestão de identidades no Google Workspace, suporte a redes, sistemas de telefonia PABX e desenvolvimento de sites institucionais (incluindo Google Sites e tecnologias web). Busco aplicar a visão analítica da Engenharia da Computação para resolver chamados e melhorar processos operacionais.
+        </p>
+
+        <!-- Informações Rápidas -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 font-mono text-xs">
+          <div class="bg-cardDark border border-borderDark p-4 rounded-lg">
+            <span class="text-gray-500 block mb-1">graduação</span>
+            <span class="text-white font-semibold">Eng. da Computação</span>
+          </div>
+          <div class="bg-cardDark border border-borderDark p-4 rounded-lg">
+            <span class="text-gray-500 block mb-1">foco técnico</span>
+            <span class="text-white font-semibold">Infraestrutura & Redes</span>
+          </div>
+          <div class="bg-cardDark border border-borderDark p-4 rounded-lg">
+            <span class="text-gray-500 block mb-1">web & cloud</span>
+            <span class="text-white font-semibold">Google Sites & Workspace</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIÊNCIA PROFISSIONAL -->
+  <section id="experiencia" class="max-w-6xl mx-auto px-6 py-20 border-t border-borderDark/50">
+    <h2 class="text-3xl font-extrabold text-white mb-12">Experiência Profissional</h2>
+
+    <div class="space-y-10 border-l border-borderDark pl-6 ml-2">
+      
+      <!-- Experiência 1: Netrw -->
+      <div class="relative">
+        <div class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-blueAccent ring-4 ring-bgDark"></div>
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+          <h3 class="text-xl font-bold text-white">Estagiário de TI</h3>
+          <span class="text-xs font-mono text-blue-400 bg-blue-950/50 px-2.5 py-1 rounded border border-blue-800/40 w-fit mt-1 sm:mt-0">03/2026 – Atual</span>
+        </div>
+        <p class="text-blue-400 font-medium text-sm mb-3">Netrw Tecnologia • Osasco, SP</p>
+        <ul class="list-disc list-inside text-gray-400 text-sm space-y-1.5 leading-relaxed">
+          <li>Gestão completa de acessos e identidades, criação de e-mails e políticas de segurança no Google Workspace.</li>
+          <li>Manutenção preventiva, corretiva e formatação de computadores e notebooks.</li>
+          <li>Monitoramento proativo de redes, servidores corporativos e rotinas de backup.</li>
+        </ul>
+      </div>
+
+      <!-- Experiência 2: RedeTV -->
+      <div class="relative">
+        <div class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-gray-500 ring-4 ring-bgDark"></div>
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+          <h3 class="text-xl font-bold text-white">Suporte de Infraestrutura</h3>
+          <span class="text-xs font-mono text-gray-400 bg-gray-800/50 px-2.5 py-1 rounded w-fit mt-1 sm:mt-0">08/2025 – 01/2026</span>
+        </div>
+        <p class="text-blue-400 font-medium text-sm mb-3">RedeTV! – Canal 9 de SP</p>
+        <ul class="list-disc list-inside text-gray-400 text-sm space-y-1.5 leading-relaxed">
+          <li>Acompanhamento e metrificação de KPIs operacionais da equipe.</li>
+          <li>Monitoramento e suporte a sistemas de telefonia (PABX), redes e telecomunicações.</li>
+          <li>Controle de estoque técnico, elaboração de relatórios e apoio na melhoria de processos internos.</li>
+        </ul>
+      </div>
+
+      <!-- Experiência 3: Jovem Aprendiz -->
+      <div class="relative">
+        <div class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-gray-600 ring-4 ring-bgDark"></div>
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+          <h3 class="text-xl font-bold text-white">Jovem Aprendiz – Infraestrutura</h3>
+          <span class="text-xs font-mono text-gray-400 bg-gray-800/50 px-2.5 py-1 rounded w-fit mt-1 sm:mt-0">07/2023 – 04/2024</span>
+        </div>
+        <p class="text-blue-400 font-medium text-sm mb-3">Infraestrutura & TI</p>
+        <ul class="list-disc list-inside text-gray-400 text-sm space-y-1.5 leading-relaxed">
+          <li>Apoio no monitoramento proativo de redes de dados e telefonia.</li>
+          <li>Auxílio na organização de indicadores operacionais e suporte administrativo técnico.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CURSOS, FORMAÇÃO E CERTIFICADOS -->
+  <section id="cursos" class="max-w-6xl mx-auto px-6 py-20 border-t border-borderDark/50">
+    <h2 class="text-3xl font-extrabold text-white mb-12">Formação & Certificações</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+      
+      <!-- Certificados e Idiomas -->
+      <div class="md:col-span-7 space-y-6">
+        <div>
+          <h3 class="text-xs font-mono uppercase tracking-wider text-gray-500 mb-4">Certificados</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 font-mono text-xs">
+            <div class="bg-cardDark border border-borderDark p-3.5 rounded-lg">
+              <span class="text-white block font-semibold">Mercado Financeiro de A a Z</span>
+              <span class="text-gray-500">ANBIMA</span>
+            </div>
+            <div class="bg-cardDark border border-borderDark p-3.5 rounded-lg">
+              <span class="text-white block font-semibold">IA para Todos</span>
+              <span class="text-gray-500">StartSe</span>
+            </div>
+            <div class="bg-cardDark border border-borderDark p-3.5 rounded-lg">
+              <span class="text-white block font-semibold">Gestão de Projetos</span>
+              <span class="text-gray-500">Certificação</span>
+            </div>
+            <div class="bg-cardDark border border-borderDark p-3.5 rounded-lg">
+              <span class="text-white block font-semibold">Risco e Compliance</span>
+              <span class="text-gray-500">Certificação</span>
+            </div>
+            <div class="bg-cardDark border border-borderDark p-3.5 rounded-lg sm:col-span-2">
+              <span class="text-white block font-semibold">Telecomunicações</span>
+              <span class="text-gray-500">Especialização Técnica</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-2">
+          <h3 class="text-xs font-mono uppercase tracking-wider text-gray-500 mb-3">Habilidades Técnicas</h3>
+          <div class="flex flex-wrap gap-2 text-xs font-mono">
+            <span class="bg-cardDark border border-borderDark text-blue-300 px-3 py-1.5 rounded">Python</span>
+            <span class="bg-cardDark border border-borderDark text-blue-300 px-3 py-1.5 rounded">SQL</span>
+            <span class="bg-cardDark border border-borderDark text-blue-300 px-3 py-1.5 rounded">Excel</span>
+            <span class="bg-cardDark border border-borderDark text-blue-300 px-3 py-1.5 rounded">Redes</span>
+            <span class="bg-cardDark border border-borderDark text-blue-300 px-3 py-1.5 rounded">PABX</span>
+            <span class="bg-cardDark border border-borderDark text-blue-300 px-3 py-1.5 rounded">Google Workspace</span>
+            <span class="bg-cardDark border border-borderDark text-blue-300 px-3 py-1.5 rounded">Google Sites</span>
+            <span class="bg-cardDark border border-borderDark text-blue-300 px-3 py-1.5 rounded">JIRA</span>
+            <span class="bg-cardDark border border-borderDark text-blue-300 px-3 py-1.5 rounded">Miro</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card Graduação Principal -->
+      <div class="md:col-span-5 bg-cardDark border border-borderDark p-6 rounded-xl flex flex-col justify-between">
+        <div>
+          <span class="text-xs font-mono text-blue-400 uppercase tracking-wider block mb-2">Graduação</span>
+          <h3 class="text-2xl font-bold text-white mb-2">Engenharia da Computação</h3>
+          <p class="text-sm text-gray-400 mb-6">Anhanguera Educacional</p>
+          
+          <div class="space-y-3 font-mono text-xs text-gray-300 mb-6">
+            <p><span class="text-gray-500">período:</span> Fev 2023 – Dez 2027</p>
+            <p><span class="text-gray-500">local:</span> Osasco, SP</p>
+            <p><span class="text-gray-500">ensino médio:</span> Concluído (2015 – 2022)</p>
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-borderDark font-mono text-xs space-y-1 text-gray-400">
+          <p>🌐 <span class="text-gray-200">Inglês:</span> Intermediário</p>
+          <p>🌐 <span class="text-gray-200">Espanhol:</span> Básico</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="max-w-6xl mx-auto px-6 py-20 border-t border-borderDark/50">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+      
+      <div class="md:col-span-6 space-y-4">
+        <h2 class="text-4xl font-extrabold text-white">Vamos conversar?</h2>
+        <p class="text-gray-400 leading-relaxed">
+          Estou disponível para oportunidades em Infraestrutura de TI, Redes, Suporte N2 e Projetos de Tecnologia.
+        </p>
+        <p class="text-xs font-mono text-gray-500">
+          📍 Osasco – SP | 📞 (11) 94026-1163
+        </p>
+      </div>
+
+      <!-- Card Terminal para E-mail -->
+      <div class="md:col-span-6">
+        <div class="bg-cardDark border border-borderDark p-6 rounded-xl space-y-4 font-mono text-xs shadow-2xl">
+          <div class="flex items-center gap-2 border-b border-borderDark pb-3 text-gray-500">
+            <span class="text-blue-400">></span> contato.sh
+          </div>
+          
+          <div class="space-y-1 text-gray-300">
+            <p><span class="text-blue-400">></span> inicializando contato... <span class="text-emerald-400">ok</span></p>
+            <p><span class="text-blue-400">></span> ryan.alessandro disponível... <span class="text-emerald-400">ok</span></p>
+            <p><span class="text-blue-400">></span> aguardando sua mensagem <span class="text-blue-400 animate-pulse">▋</span></p>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-3 pt-2">
+            <input id="emailInput" type="text" readonly value="ryanalesandro71@gmail.com" class="bg-bgDark border border-borderDark text-gray-200 px-4 py-2.5 rounded-lg flex-1 font-mono text-xs outline-none">
+            <button onclick="copiarEmail()" id="btnCopiar" class="bg-blueAccent hover:bg-blue-600 text-white px-5 py-2.5 rounded-lg font-sans font-medium transition-all">
+              Copiar e-mail
+            </button>
+          </div>
+
+          <div class="flex gap-4 pt-2 text-xs">
+            <a href="https://linkedin.com/in/ryan-alessandro" target="_blank" class="text-blue-400 hover:underline">LinkedIn ↗</a>
+            <a href="https://github.com/Ryan346-art" target="_blank" class="text-blue-400 hover:underline">GitHub ↗</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SEÇÃO DE CURRÍCULO (DOWNLOAD/VISUALIZAÇÃO NO FINAL DO SITE) -->
+  <section id="curriculo" class="max-w-6xl mx-auto px-6 py-16 border-t border-borderDark/50">
+    <div class="bg-gradient-to-r from-cardDark to-bgDark border border-blue-500/30 p-8 rounded-2xl flex flex-col md:flex-row justify-between items-center gap-6 shadow-2xl">
+      <div class="space-y-2 text-center md:text-left">
+        <span class="text-xs font-mono text-blue-400 bg-blue-950/60 px-3 py-1 rounded-full border border-blue-800/40">PDF Oficial</span>
+        <h3 class="text-2xl font-bold text-white">Currículo Profissional Completo</h3>
+        <p class="text-gray-400 text-sm max-w-xl">
+          Faça o download da versão atualizada do meu currículo com histórico de experiências, competências e certificações.
+        </p>
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
+        <a href="curriculo.pdf" target="_blank" class="px-6 py-3 bg-blueAccent hover:bg-blue-600 text-white text-center font-medium rounded-lg shadow-lg shadow-blue-500/20 transition-all font-mono text-xs">
+          📄 Visualizar PDF
+        </a>
+        <a href="curriculo.pdf" download="Ryan_Alessandro_Curriculo.pdf" class="px-6 py-3 border border-borderDark hover:bg-borderDark/50 text-gray-300 text-center font-medium rounded-lg transition-all font-mono text-xs">
+          ⬇ Baixar arquivo
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-borderDark/40 py-8 text-center font-mono text-xs text-gray-600">
+    <p>© 2026 • Ryan Alessandro Dantas da Silva • Engenharia da Computação</p>
+  </footer>
+
+  <script>
+    function copiarEmail() {
+      const emailInput = document.getElementById('emailInput');
+      navigator.clipboard.writeText(emailInput.value);
+      
+      const btn = document.getElementById('btnCopiar');
+      btn.innerText = 'Copiado! ✓';
+      btn.classList.add('bg-emerald-600');
+      
+      setTimeout(() => {
+        btn.innerText = 'Copiar e-mail';
+        btn.classList.remove('bg-emerald-600');
+      }, 2000);
+    }
+  </script>
+</body>
+</html>
